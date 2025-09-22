@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Decision Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Healthcare Decision Support</h1>
+        
+        <div class="input-section">
+            <h2>Enter Disease Name</h2>
+            <textarea id="symptoms" placeholder="Enter the disease name (e.g., Respiratory Infection, Migraine, Arthritis)"></textarea>
+            
+            <div class="diseases-list">
+                <h3>Available Diseases:</h3>
+                <ul id="available-diseases">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="location-input">
+                <h2>Enter Your Location in India</h2>
+                <input type="text" id="location-input" placeholder="Enter any city in India (Mumbai, Delhi, Bangalore, Hyderabad, Chennai, etc.)">
+            </div>
+            
+            <button id="analyze-btn">Analyze</button>
+        </div>
+        
+        <div class="results-section" id="results">
+            <h2>Recommendations</h2>
+            <div id="recommendation-content" class="hidden">
+                <div class="result-item">
+                    <h3>Possible Condition:</h3>
+                    <p id="disease-name"></p>
+                </div>
+                
+                <div class="result-item">
+                    <h3>Location:</h3>
+                    <p id="location"></p>
+                </div>
+                
+                <div class="result-item">
+                    <h3>Recommended Doctor:</h3>
+                    <p id="doctor-name"></p>
+                </div>
+                
+                <div class="result-item">
+                    <h3>Contact Information:</h3>
+                    <p id="phone-number"></p>
+                </div>
+                
+                <div class="result-item">
+                    <h3>Address:</h3>
+                    <p id="address"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
